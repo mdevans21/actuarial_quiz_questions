@@ -57,7 +57,7 @@ Normal distribution with:
 - Mean (μ) = 60%
 - Standard deviation (σ) = 6%
 
-**Layer:** 66% xs 6% (attachment at μ + σ, width of σ)
+**Layer:** 6% xs 66% (attachment at μ + σ, width of σ)
 
 ### PDF Visualization
 
