@@ -13,23 +13,23 @@ jupyter notebook actuarial_quiz.ipynb
 
 ---
 
-## Q1: Integral of Exposure Curve
+## Q1: Integral of Year of Account Exposure
 
-This exposure curve models a **year of account** with:
+This models a **year of account** with:
 - **Even attachment** of policies throughout the year
 - **One-year policy terms**
 
 At time x=0 (start of year), no exposure has been earned. Exposure builds linearly as policies attach throughout the first year, peaking at x=1 (end of year 1) when all policies are on-risk. During year 2, policies begin to expire, and exposure decreases linearly until x=2 when all policies have run off.
 
-The exposure curve is defined as:
+The Year of Account Exposure is defined as:
 - For 0 ≤ x ≤ 1: Exposure(x) = x
 - For 1 < x ≤ 2: Exposure(x) = 1 - (x - 1) = 2 - x
 
-### Step 1: Plot the Exposure Curve
+### Step 1: Plot the Year of Account Exposure
 
-A triangular exposure curve peaking at x = 1.
+A triangular exposure peaking at x = 1.
 
-![Exposure Curve](images/exposure_curve.png)
+![YOA Exposure](images/exposure_curve.png)
 
 ### Step 2: Integrate Exposure(x) to get Incurred(x)
 
@@ -41,11 +41,11 @@ Incurred(x) = ∫₀ˣ Exposure(t) dt
 | 1 | 0.5000 |
 | 2 | 1.0000 |
 
-### Step 3: Plot Exposure(x) and Incurred(x) Together
+### Step 3: Plot Year of Account Exposure and Incurred Together
 
-Combined line chart showing both the exposure curve and its cumulative integral.
+Combined line chart showing both the YOA Exposure and its cumulative integral.
 
-![Exposure and Incurred](images/exposure_incurred.png)
+![YOA Exposure and Incurred](images/exposure_incurred.png)
 
 ---
 
