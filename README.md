@@ -1,6 +1,6 @@
 # Actuarial Quiz Questions
 
-A Jupyter notebook demonstrating actuarial concepts through two quiz questions covering exposure curves and stop loss pricing.
+A Jupyter notebook demonstrating actuarial concepts through two quiz questions covering Year of Account Exposure and stop loss pricing.
 
 ## Setup
 
