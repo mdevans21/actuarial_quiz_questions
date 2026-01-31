@@ -23,9 +23,11 @@ The exposure curve is defined as:
 
 A triangular exposure curve peaking at x = 1.
 
+![Exposure Curve](images/exposure_curve.png)
+
 ### Step 2: Integrate Exposure(x) to get Incurred(x)
 
-$$\text{Incurred}(x) = \int_0^x \text{Exposure}(t) \, dt$$
+Incurred(x) = ∫₀ˣ Exposure(t) dt
 
 | x | Incurred(x) |
 |---|-------------|
@@ -36,6 +38,8 @@ $$\text{Incurred}(x) = \int_0^x \text{Exposure}(t) \, dt$$
 ### Step 3: Plot Exposure(x) and Incurred(x) Together
 
 Combined line chart showing both the exposure curve and its cumulative integral.
+
+![Exposure and Incurred](images/exposure_incurred.png)
 
 ---
 
@@ -53,6 +57,8 @@ The probability density function is plotted with:
 - Vertical lines at 66% (attachment) and 72% (exhaustion)
 - Shaded region indicating the stop loss layer
 
+![PDF with Stop Loss Layer](images/pdf_stop_loss.png)
+
 ### Step 1: Approximate Loss Cost (Trapezoidal Rule)
 
 Average of 1 - CDF(x) at 66% and 72%, multiplied by layer width (6%).
@@ -69,7 +75,7 @@ Approximate loss cost (trapezoidal) = 0.544%
 
 The expected loss to the layer computed as:
 
-$$E[\text{Layer Loss}] = \int_{66\%}^{72\%} (1 - F(x)) \, dx$$
+E[Layer Loss] = ∫ (1 - F(x)) dx, from 66% to 72%
 
 ```
 Integrated loss cost = 0.449%
@@ -106,9 +112,7 @@ Method                             Loss Cost   % Diff
 
 Demonstrates how the Monte Carlo simulation converges to the numerical integration result as the number of simulations increases (up to 100,000).
 
-The convergence plot shows:
-- **Blue line:** Simulation running average
-- **Red dashed line:** Numerical integration result (true value)
+![Simulation Convergence](images/convergence.png)
 
 ```
 Final simulation result (n=100,000): 0.448%
