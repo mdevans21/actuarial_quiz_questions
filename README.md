@@ -15,6 +15,12 @@ jupyter notebook actuarial_quiz.ipynb
 
 ## Q1: Integral of Exposure Curve
 
+This exposure curve models a **year of account** with:
+- **Even attachment** of policies throughout the year
+- **One-year policy terms**
+
+At time x=0 (start of year), no exposure has been earned. Exposure builds linearly as policies attach throughout the first year, peaking at x=1 (end of year 1) when all policies are on-risk. During year 2, policies begin to expire, and exposure decreases linearly until x=2 when all policies have run off.
+
 The exposure curve is defined as:
 - For 0 ≤ x ≤ 1: Exposure(x) = x
 - For 1 < x ≤ 2: Exposure(x) = 1 - (x - 1) = 2 - x
