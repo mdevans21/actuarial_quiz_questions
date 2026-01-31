@@ -33,6 +33,8 @@ A triangular exposure peaking at x = 1.
 
 ### Step 2: Integrate Exposure(x) to get Incurred(x)
 
+This assumes that claims are proportional to exposure, that all claims are reported instantly and case reserved perfectly.
+
 Incurred(x) = ∫₀ˣ Exposure(t) dt
 
 | x | Incurred(x) |
